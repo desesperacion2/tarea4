@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    /* Agrega estilos CSS personalizados */
+    .carousel-item img {
+      max-height: 500px; /* Ajusta la altura de las imágenes según tus preferencias */
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <title>tarea4</title>
+</head>
+<body>
+  <nav class="navbar bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=\tarea4\index.html>Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="\tarea4\calculadora.html">Calculadora</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="\tarea4\calculadora2.html">Calculadora edades</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              RRSS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.instagram.com/suazo.e_/">Instagram</a></li>
+              <li><a class="dropdown-item" href="https://www.facebook.com/emilio.suazo.5/">facebook</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/id/0/800/400" class="d-block w-100" alt="imagen 1" data-bs-toggle="modal" data-bs-target="#descriptionModal1">
+       
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/1/800/400" class="d-block w-100" alt="imagen 2" data-bs-toggle="modal" data-bs-target="#descriptionModal2">
+
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/2/800/400" class="d-block w-100" alt="imagen 3" data-bs-toggle="modal" data-bs-target="#descriptionModal3">
+
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/5/800/400" class="d-block w-100" alt="imagen 3" data-bs-toggle="modal" data-bs-target="#descriptionModal4">
+
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/6/800/400" class="d-block w-100" alt="imagen 3" data-bs-toggle="modal" data-bs-target="#descriptionModal5">
+
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/7/800/400" class="d-block w-100" alt="imagen 3" data-bs-toggle="modal" data-bs-target="#descriptionModal6">
+
+      </div>
+      
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="modal fade" id="descriptionModal1" tabindex="-1" aria-labelledby="descriptionModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="descriptionModal1Label">Descripción de la imagen 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni earum quae reprehenderit maxime deserunt quaerat praesentium voluptates ullam veritatis magnam itaque, ad in accusantium beatae odit ducimus. Labore, cumque!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="descriptionModal2" tabindex="-1" aria-labelledby="descriptionModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="descriptionModal2Label">Descripción de la imagen 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga maiores neque sunt, nam ut voluptate. Quo, corporis impedit quaerat consectetur aut est quod aspernatur fuga totam voluptatum repellendus perferendis.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="descriptionModal3" tabindex="-1" aria-labelledby="descriptionModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="descriptionModal3Label">Descripción de la imagen 3</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis impedit, facilis iusto, aliquam id consectetur fugit ipsum repellendus illo blanditiis fugiat officiis modi accusamus rem repellat sequi nemo ipsa reiciendis.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="descriptionModal4" tabindex="-1" aria-labelledby="descriptionModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="descriptionModal4Label">Descripción de la imagen 4</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate officiis at sequi cum dolorum sed animi! Quod atque ad culpa, animi nobis alias amet nesciunt, quasi, sapiente quam a aspernatur.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="descriptionModal5" tabindex="-1" aria-labelledby="descriptionModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="descriptionModal5Label">Descripción de la imagen 5</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore sapiente assumenda vero aut ea ad illum architecto molestias voluptas est nulla reiciendis expedita iusto, blanditiis recusandae pariatur accusantium perferendis a?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="descriptionModal6" tabindex="-1" aria-labelledby="descriptionModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="descriptionModal6Label">Descripción de la imagen 6</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, hic voluptatem repellat distinctio excepturi deserunt. Quae ducimus temporibus ad adipisci doloremque nostrum omnis delectus amet voluptas quas, labore aliquid dolore?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="seccion3 my-5 text-center">
+    <h2>3 Secciones con Información Sobre Mi</h2>
+  </div>
+  
+  <div class="card-group my-5">
+    <div class="card">
+      <img src="https://picsum.photos/id/10/800/400" class="card-img-top" alt="imagen1">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/id/15/800/400" class="card-img-top" alt="imagen2">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/id/80/800/400" class="card-img-top" alt="imagen3">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="seccion3 my-5 text-center">
+    <h3>Formulario de Contacto</h3>
+  </div>
+  
+  <form class="row g-3 mx-2 my-10">
+    <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+    <label for="exampleFormControlInput2" class="form-label">Name</label>
+    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Emilio">
+    </div>
+    <div class="form-floating">
+    <textarea class="form-control" placeholder="Asunto" id="floatingTextarea"></textarea>
+    <label for="floatingTextarea">Asunto</label>
+    </div>
+    <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">comentarios</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="col-12">
+      <button id="botonenv" class="btn btn-primary" type="button" onclick="enviarFormulario()">Enviar</button> 
+    </div>
+  </form>
+
+  <script>
+    function enviarFormulario() {
+      // Muestra una alerta simple cuando se hace clic en el botón "Enviar"
+      alert("Formulario enviado correctamente");
+
+      // Recarga la página después de mostrar la alerta
+      location.reload();
+    }
+  </script>
+
+  <footer class="nose my-10 text-center">
+    Emilio Suazo 2023
+    Diseño de Software
+  </footer>
+  
+  
+  
+  
+  
+</body>
+</html>
